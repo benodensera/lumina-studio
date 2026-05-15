@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÚMINA — Estudio Fotográfico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- nav -->
+    <nav id="mainNav">
+        <a href="#" class="nav-logo">LÚMINA</a>
+        <ul class="nav-links">
+            <li><a href="#portfolio">Portafolio</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#process">Proceso</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- hero -->
+    <section class="hero">
+        <div class="hero-left">
+            <span class="hero-eyebrow">Estudio fotográfico &mdash; Est. 2018</span>
+            <h1 class="hero-title">
+                <span class="line"><span class="word">La luz</span></span>
+                <span class="line"><span class="word">es nuestra</span></span>
+                <span class="line"><span class="word">firma.</span></span>
+            </h1>
+            <p class="hero-subtitle">Fotografía editorial y de retrato para marcas y personas que entienden que cada
+                imagen es una declaración permanente.</p>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn-primary">Ver Portafolio</a>
+                <a href="#contact" class="btn-outline">Reservar Sesión</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-img-wrap" id="heroImg">
+                <div class="hero-photos">
+                    <div class="hero-photo" style="background:#1e1a12;">
+                        <div class="hero-photo-inner">
+                            <img src="./images/hero-1.jpg" alt="">
+                        </div>
+                        <div class="photo-label">editorial</div>
+                    </div>
+                    <div class="hero-photo" style="background:#14181e;">
+                        <div class="hero-photo-inner">
+                            <img src="./images/hero-2.jpg" alt="">
+                        </div>
+                        <div class="photo-label">retrato</div>
+                    </div>
+                    <div class="hero-photo" style="background:#1a1e14;">
+                        <div class="hero-photo-inner">
+                            <img src="./images/hero-3.jpg" alt="">
+                        </div>
+                        <div class="photo-label">boda</div>
+                    </div>
+                    <div class="hero-photo" style="background:#1e1412;">
+                        <div class="hero-photo-inner">
+                            <img src="./images/hero-4.jpg" alt="">
+                        </div>
+                        <div class="photo-label">moda</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-ind" id="scrollInd">
+            <div class="scroll-line-anim" id="scrollLineEl"></div>
+            <span class="scroll-txt">Scroll</span>
+        </div>
+        <div class="hero-bignum">01</div>
+    </section>
+
+    <!-- divider -->
+    <div class="divider">
+        <div class="div-line" id="dl1"></div>
+        <span class="div-txt" id="divTxt">&mdash; Cada encuadre, una historia sin palabras</span>
+        <div class="div-line" id="dl2"></div>
+    </div>
+
+    <!-- services -->
+    <section class="services" id="services">
+        <div class="sec-header">
+            <div>
+                <span class="section-label">/ Servicios</span>
+                <h2 class="section-title" id="svcTitle">Nuestras<br>Especialidades</h2>
+            </div>
+            <p class="sec-desc">Cada sesión es diseñada con intención absoluta. No improvisamos la luz — la esculpimos.
+            </p>
+        </div>
+        <div class="services-grid">
+            <div class="svc-card">
+                <div class="svc-hover-bg"></div>
+                <div class="svc-num">01</div>
+                <h3 class="svc-name">Fotografía<br>Editorial</h3>
+                <p class="svc-desc">Imágenes para publicaciones de moda, belleza y lifestyle. Narrativas visuales que
+                    sobreviven al tiempo.</p><span class="svc-arrow">↗</span>
+            </div>
+            <div class="svc-card">
+                <div class="svc-hover-bg"></div>
+                <div class="svc-num">02</div>
+                <h3 class="svc-name">Retrato<br>Corporativo</h3>
+                <p class="svc-desc">Tu imagen profesional es tu primera negociación. La hacemos memorable, auténtica y
+                    poderosa.</p><span class="svc-arrow">↗</span>
+            </div>
+            <div class="svc-card">
+                <div class="svc-hover-bg"></div>
+                <div class="svc-num">03</div>
+                <h3 class="svc-name">Fotografía<br>de Boda</h3>
+                <p class="svc-desc">Momentos que duran más que cualquier recuerdo. Documentamos amor con sensibilidad y
+                    técnica sublime.</p><span class="svc-arrow">↗</span>
+            </div>
+            <div class="svc-card">
+                <div class="svc-hover-bg"></div>
+                <div class="svc-num">04</div>
+                <h3 class="svc-name">Branding<br>Visual</h3>
+                <p class="svc-desc">Fotografía de producto que transforma percepciones y eleva el valor percibido de tu
+                    marca.</p><span class="svc-arrow">↗</span>
+            </div>
+            <div class="svc-card">
+                <div class="svc-hover-bg"></div>
+                <div class="svc-num">05</div>
+                <h3 class="svc-name">Fine Art<br>Prints</h3>
+                <p class="svc-desc">Piezas únicas de arte fotográfico para coleccionistas y espacios que exigen lo
+                    extraordinario.</p><span class="svc-arrow">↗</span>
+            </div>
+            <div class="svc-card">
+                <div class="svc-hover-bg"></div>
+                <div class="svc-num">06</div>
+                <h3 class="svc-name">Dirección<br>Creativa</h3>
+                <p class="svc-desc">Concepto, arte, producción. Para campañas que necesitan más que una cámara —
+                    necesitan visión.</p><span class="svc-arrow">↗</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio — horizontal scroll -->
+    <section id="portfolio">
+        <div class="h-scroll-pin" id="hPin">
+            <div class="h-scroll-sticky">
+                <div class="h-track" id="hTrack">
+                    <div class="h-intro">
+                        <span class="section-label">/ Portafolio</span>
+                        <h2 class="section-title" style="font-size:clamp(2.8rem,4vw,4.5rem);">Trabajo<br>Selecto</h2>
+                        <p class="h-intro-sub">Una muestra curada de proyectos que definen nuestra filosofía visual.</p>
+                    </div>
+
+                    <div class="h-item">
+                        <div class="h-img" style="width:420px; height:560px; background:#1e1a12;">
+                            <div class="h-img-inner">
+                                <img class="h-photo" src="./images/barroco-portfolio.jpg" alt="" srcset="">
+                            </div>
+                            <div class="h-float">
+                                <p class="h-float-txt">Campaña editorial para revista de moda nacional. Concepto: luz de
+                                    invierno en interiores barrocos.</p>
+                            </div>
+                        </div>
+                        <div class="h-cap">
+                            <div class="h-cat">Editorial · 2024</div>
+                            <div class="h-name">Invierno Dorado</div>
+                        </div>
+                    </div>
+
+                    <div class="h-item" style="margin-top:70px;">
+                        <div class="h-img" style="width:300px; height:440px; background:#14181e;">
+                            <div class="h-img-inner">
+                                <img class="h-photo" src="./images/portrait-portfolio.jpg" alt="" srcset="">
+                            </div>
+                            <div class="h-float">
+                                <p class="h-float-txt">Serie de retratos para directores ejecutivos de empresas Fortune
+                                    500.</p>
+                            </div>
+                        </div>
+                        <div class="h-cap">
+                            <div class="h-cat">Corporativo · 2024</div>
+                            <div class="h-name">Líderes en Silencio</div>
+                        </div>
+                    </div>
+
+                    <div class="h-item">
+                        <div class="h-img" style="width:420px; height:560px; background:#1a1a0e;">
+                            <div class="h-img-inner">
+                                <img class="h-photo" src="./images/wedding-portfolio.jpg" alt="" srcset="">
+                            </div>
+                            <div class="h-float">
+                                <p class="h-float-txt">Boda íntima en hacienda del siglo XVIII. La luz del atardecer
+                                    como único testigo.</p>
+                            </div>
+                        </div>
+                        <div class="h-cap">
+                            <div class="h-cat">Bodas · 2023</div>
+                            <div class="h-name">Atardecer en Siena</div>
+                        </div>
+                    </div>
+
+                    <div class="h-item" style="margin-top:50px;">
+                        <div class="h-img" style="width:320px; height:480px; background:#1e1410;">
+                            <div class="h-img-inner">
+                                <img class="h-photo" src="./images/haute-couture-portfolio.jpg" alt="" srcset="">
+                            </div>
+                            <div class="h-float">
+                                <p class="h-float-txt">Lookbook para colección de alta costura. Texturas, siluetas y el
+                                    vacío como compositivo.</p>
+                            </div>
+                        </div>
+                        <div class="h-cap">
+                            <div class="h-cat">Moda · 2023</div>
+                            <div class="h-name">Forma y Vacío</div>
+                        </div>
+                    </div>
+
+                    <div class="h-item">
+                        <div class="h-img" style="width:420px; height:560px; background:#12161e;">
+                            <div class="h-img-inner">
+                                <img class="h-photo" src="./images/contemporary-art.-portfolio.jpg" alt="" srcset="">
+                            </div>
+                            <div class="h-float">
+                                <p class="h-float-txt">Serie limitada de 12 piezas para galería de arte contemporáneo.
+                                    Vendida en 48 horas.</p>
+                            </div>
+                        </div>
+                        <div class="h-cap">
+                            <div class="h-cat">Fine Art · 2023</div>
+                            <div class="h-name">Umbral</div>
+                        </div>
+                    </div>
+
+                    <div style="flex-shrink:0; width:4rem;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- marquee -->
+    <div class="marquee-wrap">
+        <div class="marquee-track" id="marquee">
+            <span class="m-text">Luz <span class="m-dot">·</span> Composición <span class="m-dot">·</span> Balance <span
+                    class="m-dot">·</span> Perspectiva <span class="m-dot">·</span> Bokeh <span class="m-dot">·</span>
+                Enfoque <span class="m-dot">·</span> Encuadre <span class="m-dot">·</span> Exposición <span
+                    class="m-dot">·</span>
+                Perspectiva <span class="m-dot">·</span>
+                &nbsp;
+            </span>
+            <span class="m-text">Luz <span class="m-dot">·</span> Composición <span class="m-dot">·</span> Balance <span
+                    class="m-dot">·</span> Perspectiva <span class="m-dot">·</span> Bokeh <span class="m-dot">·</span>
+                Enfoque <span class="m-dot">·</span> Encuadre <span class="m-dot">·</span> Exposición <span
+                    class="m-dot">·</span>
+                Perspectiva <span class="m-dot">·</span>
+                &nbsp;
+            </span>
+        </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-section">
+        <div class="stat-card">
+            <div class="stat-num" data-target="847">0</div>
+            <div class="stat-lbl">Sesiones realizadas</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num" data-target="12">0</div>
+            <div class="stat-lbl">Años de experiencia</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num" data-target="34">0</div>
+            <div class="stat-lbl">Publicaciones internacionales</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num" data-target="99">0</div>
+            <div class="stat-lbl">% Satisfacción de clientes</div>
+        </div>
+    </div>
+
+    <!-- process -->
+    <section class="process-section" id="process">
+        <span class="section-label">/ Proceso</span>
+        <h2 class="section-title" id="procTitle">Cómo<br>Trabajamos</h2>
+        <div class="process-grid">
+            <div class="proc-item">
+                <div class="proc-step">Paso 01</div>
+                <h3 class="proc-title">Consulta<br>Creativa</h3>
+                <p class="proc-desc">Cada proyecto comienza con una conversación profunda. Entendemos tu visión, tu
+                    marca, tu esencia.</p>
+                <div class="proc-bignum">01</div>
+            </div>
+            <div class="proc-item">
+                <div class="proc-step">Paso 02</div>
+                <h3 class="proc-title">Concepto<br>y Producción</h3>
+                <p class="proc-desc">Diseñamos cada detalle: locación, iluminación, vestuario, mood board. Nada es
+                    accidental.</p>
+                <div class="proc-bignum">02</div>
+            </div>
+            <div class="proc-item">
+                <div class="proc-step">Paso 03</div>
+                <h3 class="proc-title">La<br>Sesión</h3>
+                <p class="proc-desc">El día de rodaje es una experiencia. Creamos un ambiente donde la autenticidad
+                    emerge naturalmente.</p>
+                <div class="proc-bignum">03</div>
+            </div>
+            <div class="proc-item">
+                <div class="proc-step">Paso 04</div>
+                <h3 class="proc-title">Edición<br>Artesanal</h3>
+                <p class="proc-desc">Cada imagen es trabajada a mano. No usamos filtros automáticos. El retoque es arte,
+                    no sustituto.</p>
+                <div class="proc-bignum">04</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial -->
+    <section class="testimonial">
+        <div class="t-visual" id="tVisual">
+            <div class="t-main">
+                <div class="t-img-wrap">
+                    <img src="./images/wedding-main.jpg" alt="" class="t-photo">
+                </div>
+            </div>
+            <div class="t-accent">
+                <div class="t-img-wrap">
+                    <img src="./images/accent.jpg" alt="" class="t-photo">
+                </div>
+            </div>
+            <div class="t-line"></div>
+        </div>
+        <div>
+            <div class="t-label">/ Testimonio</div>
+            <blockquote class="t-quote" id="tQuote">
+                "Mirar nuestro álbum es volver a ese día — Lúmina atrapó la magia de los momentos
+                para que podamos revivirlos"
+            </blockquote>
+            <div class="t-author" id="tAuthor">— Isabel Montoya &amp; Carlos Rueda · Boda en Cartagena, 2024</div>
+        </div>
+    </section>
+
+    <!-- cta -->
+    <section class="cta" id="contact">
+        <div class="cta-bg">LÚMINA</div>
+        <p class="cta-eye" id="ctaEye">/ Comencemos</p>
+        <h2 class="cta-title">
+            <span class="line"><span class="word">Tu historia</span></span>
+            <span class="line"><span class="word">merece ser</span></span>
+            <span class="line"><span class="word">fotografiada.</span></span>
+        </h2>
+        <div class="cta-acts" id="ctaActs">
+            <a href="mailto:hola@lumina.studio" class="btn-primary">Escríbenos</a>
+            <a href="tel:+573001234567" class="btn-outline">+57 300 123 4567</a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="f-logo">LÚMINA</div>
+        <ul class="f-links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Behance</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+        <span class="f-copy">© 2025 LÚmina Estudio Fotográfico</span>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
